@@ -30,6 +30,12 @@ public class Person {
     public Person() {
     }
 
+    public Person(String name, String lastName, LocalDate birthDate) {
+        this.name = name;
+        this.lastName = lastName;
+        this.birthdate = birthDate;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -58,7 +64,7 @@ public class Person {
         return birthdate;
     }
 
-    public void setBirthdate(LocalDate birthdate) {
-        this.birthdate = birthdate;
+    public void setBirthdate(LocalDate birthDay) {
+        this.birthdate = birthDay;
     }
 }
